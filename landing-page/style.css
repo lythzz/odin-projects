@@ -1,0 +1,161 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    margin: 0;
+}
+.header{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color:#1F2937;
+    border: #1f2937;
+}
+#logo{
+   align-self: center;
+   font: bolder 24px Roboto;
+   color: #F9FAF8;
+   width: 100px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: #E5E7EB;
+    font: normal 18px Roboto;
+    align-self: center;
+}
+.Hero{
+    background-color: #1F2937;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: space-around;
+}
+.heroTitle{
+    width: 450px;
+    font: bolder 48px Roboto;
+    margin: 60px 0px 10px 300px;
+    padding-left: 100px;   
+}
+.heroSubtext{
+    width: 500px;
+    margin: 10px 100px 10px 300px;
+    padding-left: 100px;   
+}
+.heroImg{
+    margin: 60px 300px 60px 0px;
+    background-color: #666863;
+    width: 500px;
+    height: 280px;
+}
+.heroBtn{
+    width: 70px;
+    margin-left: 400px;
+    margin-bottom: 60px;
+    padding: 5px 0px;
+    border-radius: 5px;
+    background-color: #3382F6;
+    color: #F9FAF8;
+    border-color: #3382F6;
+    font-style: bold;
+}
+#ImgHero{
+    width: 500px;
+}
+#infoTitle{
+    font: bolder 36px Roboto;
+    text-align: center;
+    margin: 50px;
+}
+.infoCards{
+    display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+.cardimg{
+    border: solid #3382F6 1px;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+
+}
+.cardText{
+    text-align: center;
+    padding: 10px;
+
+}
+.quote{
+    background-color: #E5E7EB;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.quoteText{
+    font: italic 36px Roboto;
+    color: #1F2937;
+    width: 700px;
+    align-self: center;
+    padding: 30px 0px 0px;
+}
+.quoteAuthor{
+   text-align: right;
+    font: bold 16px Roboto;
+    padding: 20px;
+}
+
+.signupContainer{
+    width: 800px;
+    height: 100px;
+    margin: 100px auto;
+    background-color: #3382F6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.signuptext{   
+    padding: 20px 50px;    
+    align-self: center;
+    color: #E5E7EB;
+    
+   
+}
+.signupTitle{
+    font: bold 20px Roboto;
+}
+.signupTxt{
+    font: normal 18px Roboto;
+}
+.signupBtn{
+    max-height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #3382F6;
+    border: solid #E5E7EB;
+    color: #E5E7EB;
+    font: bold 14px Roboto;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.footer{
+    background-color: #1f2937;
+    flex: 1;
+    min-height: 72px;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal 16px Roboto;
+}
