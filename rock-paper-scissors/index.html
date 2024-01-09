@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/aux-dotbitc" rel="stylesheet">
+</head>
+<body>
+    <div class="title"><h1>Rocks, Papers and Scissors!</h1></div>
+    <div class="moveset">
+    <div class="movestxt">Pick a Move:</div>
+    <div class="movesbox">
+        <button class="moves" id="rock"><img src="./img/rock.png" alt=""></button>
+        <button class="moves" id="paper"><img src="./img/paper.png" alt=""></button>
+        <button class="moves" id="scissors"><img src="./img/scissors.png" alt=""></button>
+    </div></div>
+
+    <div class="container">
+        <div class="result">
+            <div class="usermove">
+                <div class="usericon"><img src="./img/unk.png" alt="" id="uIcon"class="resicon"></div>
+                <div class="usertxt">You</div>
+            </div>
+            <div class="round">
+                <div class="score">0-0</div>
+                <div class="roundtxt"></div>
+            </div>
+            <div class="machinemove">
+                <div class="machineicon">
+                    <img src="./img/unk.png" alt="" id="mIcon" class="resicon">
+                </div>
+                <div class="machinetxt">Machine</div>
+            </div>
+    </div></div>
+    <div class="ng">
+        <div class="ng-content">
+            <p id="ngtext"></p> 
+            <button id="pAgain">Play Again</button>
+          </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
