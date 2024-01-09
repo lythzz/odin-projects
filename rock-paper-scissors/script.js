@@ -14,6 +14,8 @@ const userIcon = document.querySelector('#uIcon')
 const ng = document.querySelector('.ng')
 const ngPlay = document.querySelector('#pAgain')
 const ngText = document.querySelector('#ngtext')
+const winAudio = new Audio('./audio/win.mp3')
+const lossAudio = new Audio('./audio/loss.mp3')
 
 let upoints = 0
 let mpoints = 0
@@ -28,9 +30,24 @@ const getMachineMove = ()=>{ //gera a jogada da maquina
 const check = ()=>{ //verifica se a pont max foi atingida
     if(upoints<=4&&mpoints<=4){
         return
-    }else{
+    }else if(upoints>=5){
         ng.style.display = "block";
-        ngText.innerHTML = `Game Over! <br>Score:<br> ${upoints} - ${mpoints}`
+        ngText.innerHTML = `Match End! <br>Score:<br> ${upoints} - ${mpoints}`
+        winAudio.play()
+        ngPlay.onclick = function() {
+            ng.style.display = "none";
+            upoints=0
+            mpoints=0
+            roundtext.innerHTML = ''
+            machineIcon.src='./img/unk.png'
+            userIcon.src = './img/unk.png'
+            score.innerHTML = '0 - 0'
+          }
+          
+    }else if(mpoints>=5){
+        ng.style.display = "block";
+        ngText.innerHTML = `Match End! <br>Score:<br> ${upoints} - ${mpoints}`
+        lossAudio.play()
         ngPlay.onclick = function() {
             ng.style.display = "none";
             upoints=0
@@ -42,7 +59,9 @@ const check = ()=>{ //verifica se a pont max foi atingida
           }
           
     }
-}
+    }
+        
+
 //opera os botoes
 rock.addEventListener('click',()=>{
     usermove='rock'
