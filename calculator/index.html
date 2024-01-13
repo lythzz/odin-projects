@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Tektur:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="cont">
+    <h1>Little CalC</h1>
+    <div id="container">
+        <div id="display"></div>
+        <div class="btns box">
+            <div class="btn op" onclick="AC()">AC</div>
+            <div class="btn op" onclick="C()"><i class="fa-solid fa-delete-left" style="color: #ffc037;"></i></div>
+            <div class="btn op" onclick="setOp('^')">^</div>
+            <div class="btn op" onclick="setOp('x')">x</div>
+            <div class="btn num" onclick="num(7)">7</div>
+            <div class="btn num" onclick="num(8)">8</div>
+            <div class="btn num" onclick="num(9)">9</div>
+            <div class="btn op" onclick="setOp('/')">/</div>
+            <div class="btn num" onclick="num(4)">4</div>
+            <div class="btn num" onclick="num(5)">5</div>
+            <div class="btn num" onclick="num(6)">6</div>
+            <div class="btn op" onclick="setOp('+')">+</div>
+            <div class="btn num" onclick="num(1)">1</div>
+            <div class="btn num" onclick="num(2)">2</div>
+            <div class="btn num" onclick="num(3)">3</div>
+            <div class="btn op" onclick="setOp('-')">-</div>
+            <div class="btn num" onclick="plusMinus()">+/-</div>
+            <div class="btn num" onclick="num(0)">0</div>
+            <div class="btn num" onclick="num('.')">.</div>
+            <div class="btn op equal" onclick="calculate()">=</div>
+        </div>
+    </div>
+</div>
+<a href="https://github.com/lythzz" id="footer"><i class="fa-brands fa-github" style="color: #ffc400;"></i> LHH</a>
+<script src="https://kit.fontawesome.com/eab526baf9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
